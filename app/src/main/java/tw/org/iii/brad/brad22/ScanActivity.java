@@ -17,11 +17,11 @@ public class ScanActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mScannerView = new ZXingScannerView(this);   // Programmatically initialize the scanner view
-        setContentView(mScannerView);                // 整個畫面都是mScannerView這個自訂View
+//        mScannerView = new ZXingScannerView(this);   // Programmatically initialize the scanner view
+//        setContentView(mScannerView);                // 整個畫面都是mScannerView這個自訂View
 
-
-//        setContentView(R.layout.activity_scan);       //原來的
+        setContentView(R.layout.activity_scan);       //原來的
+        mScannerView = findViewById(R.id.scanner);
     }
 
     @Override
