@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 321 && resultCode == RESULT_OK){
             webView.loadUrl(
-                    String.format("javascript:showCode('%s')",data.getStringExtra("code")));
+                    String.format("javascript:showCode('%s')",data.getStringExtra("code"))); //data是回呼回來時帶的
         }
     }
 }
